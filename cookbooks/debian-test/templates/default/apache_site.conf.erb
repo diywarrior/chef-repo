@@ -1,0 +1,8 @@
+<VirtualHost *:*>
+    ServerName <%= @apache_site %>
+    ServerAlias www.<%= @apache_site %>
+    DocumentRoot /var/www/<%= @apache_site %>
+    <Directory /var/www/<%= @apache_site %>>
+        AllowOverride All
+    </Directory>
+</VirtualHost>

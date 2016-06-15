@@ -1,0 +1,11 @@
+name 'centos-test'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures centos-test'
+long_description 'Installs/Configures centos-test'
+version '0.1.0'
+
+depends 'selinux', '~> 0.9.0'
+depends 'yum', '~> 3.11.0'
+depends 'firewall', '~> 2.5.2'

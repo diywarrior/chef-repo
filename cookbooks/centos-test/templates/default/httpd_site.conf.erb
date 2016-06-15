@@ -1,0 +1,8 @@
+<VirtualHost *:<%= @httpd_port %>>
+
+    ServerName www.<%= @httpd_site %>
+    ServerAlias <%= @httpd_site %>
+    DocumentRoot /var/www/<%= @httpd_site %>/public_html
+    ErrorLog /var/www/<%= @httpd_site %>/error.log
+    CustomLog /var/www/<%= @httpd_site %>/requests.log combined
+</VirtualHost>

@@ -1,0 +1,29 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["private_network", {ip: "192.168.10.254"}]
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+    driver:
+      customize:
+        memory: 1024
+
+  - name: centos-7.1
+    driver:
+      customize:
+        memory: 1024
+
+suites:
+  - name: default
+    cookbook_path: "/home/sid/chef-repo/cookbooks"
+    roles_path: "/home/sid/chef-repo/roles"
+    data_bag_path: "/home/sid/chef-repo/data_bags"
+    encrypted_data_bag_secret_key_path: "/home/sid/chef-repo/secret_key"
+    run_list:
+      - role[production]
+    attributes:

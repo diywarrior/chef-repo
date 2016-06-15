@@ -1,0 +1,5 @@
+source "https://supermarket.chef.io"
+
+metadata
+
+cookbook "centos-test", path: "/home/sid/chef-repo/cookbooks/centos-test"

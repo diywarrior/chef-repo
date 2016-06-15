@@ -1,0 +1,15 @@
+default['firewall']['allow_ssh'] = true
+default['firewall']['firewalld']['permanent'] = true
+default['centos-test']['open_ports'] = [80, 8080, 8081]
+default['centos-test']['close_ports'] = [21, 25]
+default['centos-test']['group'] = 'shell_users'
+default['centos-test']['users'] = ['user1', 'user2', 'user3']
+default['centos-test']['httpd_port'] = '8081'
+default['centos-test']['httpd_site'] = 'example.com'
+default['centos-test']['httpd_root'] = '/var/www/example.com/public_html'
+default['centos-test']['nodejs_root'] = '/usr/share/node'
+default['centos-test']['node_app'] = 'helloworld'
+default['centos-test']['nodejs_port'] = '8080'
+default['centos-test']['nginx_site'] = 'test.org'
+default['centos-test']['nginx_root'] = '/var/www/test.org/html'
+default['centos-test']['secret_path'] = '/tmp/kitchen/encrypted_data_bag_secret'

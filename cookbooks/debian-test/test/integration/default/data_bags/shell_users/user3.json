@@ -1,0 +1,9 @@
+{
+  "id": "user3",
+  "password": {
+    "encrypted_data": "Uts2RYlzwR6Xo8H8Buh5tABYa21hu8YqrrP9ObFvYygn79ff1HogAbWhBeoP\n1+5IS4tzxYWam5oKdWPWIYlNeQ==\n",
+    "iv": "M6Od/JcMUW+4s1QhGMLpyw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
